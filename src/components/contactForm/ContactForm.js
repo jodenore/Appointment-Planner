@@ -9,7 +9,6 @@ export const ContactForm = ({
   setEmail,
   handleSubmit,
 }) => {
-  let regex = "((+44(s(0)s|s0s|s)?)|0)7d{3}(s)?d{6}";
   return (
     <form onSubmit={handleSubmit}>
       <input
@@ -25,7 +24,6 @@ export const ContactForm = ({
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
         placeholder={"Phone Number"}
-        pattern={regex}
         required
       ></input>
 
